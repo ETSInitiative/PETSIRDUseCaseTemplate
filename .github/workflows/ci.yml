@@ -50,6 +50,7 @@ jobs:
 
       - name: Python
         run: |
+          pip install ./PETSIRD/python
           cd python
           python start.py
 
