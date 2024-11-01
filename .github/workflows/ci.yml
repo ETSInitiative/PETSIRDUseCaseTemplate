@@ -51,6 +51,7 @@ jobs:
       - name: Python
         run: |
           cd python
+          pip install .
           python start.py
 
       - name: Cpp
