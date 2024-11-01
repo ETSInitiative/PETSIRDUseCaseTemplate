@@ -50,8 +50,8 @@ jobs:
 
       - name: Python
         run: |
+          pip install ./PETSIRD/python
           cd python
-          pip install .
           python start.py
 
       - name: Cpp
