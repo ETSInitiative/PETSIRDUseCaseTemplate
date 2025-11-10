@@ -17,3 +17,5 @@ default: run
     cd cpp/build; \
     ninja
 
+@run: build
+    echo Something here
