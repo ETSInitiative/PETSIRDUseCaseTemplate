@@ -16,19 +16,15 @@ else()
   add_compile_options(-Wall -Wextra -pedantic)
 endif()
 
-set(PETSIRD_dir ../PETSIRD/cpp/generated)
-add_subdirectory(${PETSIRD_dir} PETSIRD_generated)
+set(PETSIRD_dir ../PETSIRD/cpp/)
+add_subdirectory(${PETSIRD_dir} PETSIRD)
 
 # Add any packages, below is an example for ROOT (unlikely you'll need that one though!)
 # find_package(ROOT REQUIRED COMPONENTS Tree)
 
 # Example lines for a new executable
 # add_executable(my_prog my_prog.cpp)
-# target_include_directories(my_prog PUBLIC ${PETSIRD_dir})
-# needed for helpers
-# target_include_directories(my_prog PUBLIC ${PETSIRD_dir}/..)
-# target_include_directories(my_prog PUBLIC ${PETSIRD_dir}/../helpers/include)
-# target_link_libraries(my_prog PUBLIC petsird_generated)
+# target_link_libraries(my_prog PUBLIC petsird_helpers)
 
 # add any dependencies on packages here
 # target_link_libraries(my_prog PUBLIC ROOT::Tree)
