@@ -3,6 +3,13 @@
 The purpose of this repo is to provide a starting point for developing software that uses PETSIRD.
 It is currently mostly needed/useful for C++ development.
 
+***WARNING*** This repo is now mostly obsolete (and *is* out-of-date). For C++ development, you can do
+```sh
+conda create -n petsirdfun  conda-forge::libpetsird
+conda activate petsirdfun
+```
+and then simply use `find_package(PETSIRD CONFIG)` in CMake, see https://github.com/ETSInitiative/PETSIRD/tree/main/cpp/example
+
 ## Background
 The [Emission Tomography Standardization Initiative (ETSI)](https://etsinitiative.org/)
 is working towards establishing a standard for PET Raw Data, called PETSIRD ("PET ETSI Raw Data").
